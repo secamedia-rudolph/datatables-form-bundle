@@ -1,5 +1,5 @@
 {
-    "name": "sm/datatables-form-bundle",
+    "name": "secamedia/datatables-form-bundle",
     "type": "symfony-bundle",
     "description": "Provides Form Types and Entities representing the DataTables AJAX Request.",
     "homepage": "http://secamedia.de/",
