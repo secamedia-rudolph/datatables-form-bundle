@@ -1,0 +1,21 @@
+{
+    "name": "sm/datatables-form-bundle",
+    "type": "symfony-bundle",
+    "description": "Provides Form Types and Entities representing the DataTables AJAX Request.",
+    "homepage": "http://secamedia.de/",
+    "license": "WTFPL",
+    "authors": [
+        {
+            "name": "Thomas Rudolph",
+            "email": "rudolph@secamedia.de"
+        }
+    ],
+    "require": {
+        "php": ">=5.5.9",
+        "symfony/framework-bundle": "^2.6|^3.0"
+    },
+    "autoload": {
+        "psr-4": { "Sm\\DatatablesFormBundle\\": "" }
+    },
+    "minimum-stability": "dev"
+}
