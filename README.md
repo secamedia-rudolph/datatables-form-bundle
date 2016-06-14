@@ -10,7 +10,7 @@ Installation via Composer
 
 Install it via composer as a dependency:
 
-`$ php composer.phar install secamedia/datatables-form-bundle`
+`$ php composer.phar require secamedia/datatables-form-bundle`
 
 
 Activation
