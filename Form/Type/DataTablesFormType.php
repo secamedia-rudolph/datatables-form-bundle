@@ -2,6 +2,7 @@
 
 namespace Sm\DatatablesFormBundle\Form\Type;
 
+use Sm\DatatablesFormBundle\Entity\DataTablesForm;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\Extension\Core\Type\CollectionType;
 use Symfony\Component\Form\FormBuilderInterface;
@@ -16,7 +17,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 class DataTablesFormType extends AbstractType
 {
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -36,19 +37,19 @@ class DataTablesFormType extends AbstractType
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => 'Sm\DatatablesFormBundle\Entity\DataTablesForm',
+            'data_class' => DataTablesForm::class,
             'csrf_protection' => false,
             'validation_groups' => false
         ]);
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function getBlockPrefix()
     {

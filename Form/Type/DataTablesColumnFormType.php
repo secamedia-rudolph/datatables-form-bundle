@@ -2,6 +2,7 @@
 
 namespace Sm\DatatablesFormBundle\Form\Type;
 
+use Sm\DatatablesFormBundle\Entity\DataTablesColumnForm;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -13,7 +14,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 class DataTablesColumnFormType extends AbstractType
 {
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -26,18 +27,18 @@ class DataTablesColumnFormType extends AbstractType
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => 'Sm\DatatablesFormBundle\Entity\DataTablesColumnForm',
+            'data_class' => DataTablesColumnForm::class,
             'csrf_protection' => false
         ]);
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function getBlockPrefix()
     {

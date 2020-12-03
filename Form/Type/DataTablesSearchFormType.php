@@ -2,6 +2,7 @@
 
 namespace Sm\DatatablesFormBundle\Form\Type;
 
+use Sm\DatatablesFormBundle\Entity\DataTablesSearchForm;
 use Symfony\Component\Form\AbstractType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
@@ -15,7 +16,7 @@ use Symfony\Component\OptionsResolver\OptionsResolver;
 class DataTablesSearchFormType extends AbstractType
 {
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
@@ -25,18 +26,18 @@ class DataTablesSearchFormType extends AbstractType
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function configureOptions(OptionsResolver $resolver)
     {
         $resolver->setDefaults([
-            'data_class' => 'Sm\DatatablesFormBundle\Entity\DataTablesSearchForm',
+            'data_class' => DataTablesSearchForm::class,
             'csrf_protection' => false
         ]);
     }
 
     /**
-     * {@inheritdoc}
+     * @inheritDoc
      */
     public function getBlockPrefix()
     {
